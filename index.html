@@ -18,10 +18,24 @@
 <div id="envelope-screen">
   <div class="env-bg"></div>
   <div class="env-wrap">
-    <div class="env-monogram">T<span>&amp;</span>L</div>
     <p class="env-label">Trân trọng kính mời</p>
+
+    <div class="env-scene">
+      <div class="envelope" id="envelope">
+        <div class="env-pocket"></div>
+        <div class="env-card">
+          <p class="env-card-label">Thiệp Mời</p>
+          <div class="env-card-monogram">T<span>&amp;</span>L</div>
+          <p class="env-card-names">Xuân Toàn &amp; Mạc Loan</p>
+          <p class="env-card-date">20 . 09 . 2026</p>
+        </div>
+        <div class="env-flap"></div>
+        <div class="env-seal">T<span>&amp;</span>L</div>
+      </div>
+    </div>
+
     <button id="open-btn" class="env-button" type="button">
-      <span>Mở Thiệp Mời</span>
+      <span>Chạm Để Mở Thiệp</span>
     </button>
     <p class="env-sub">Nguyễn Xuân Toàn &amp; Mạc Thị Loan</p>
   </div>
@@ -29,6 +43,14 @@
 
 <!-- floating petals -->
 <div id="petals" aria-hidden="true"></div>
+
+<!-- background music -->
+<audio id="bg-music" src="assets/music.mp3" loop preload="none"></audio>
+<button id="music-toggle" class="music-toggle hidden" type="button" aria-label="Bật/Tắt nhạc nền" aria-pressed="false">
+  <span class="music-disc">
+    <span class="music-note">&#9834;</span>
+  </span>
+</button>
 
 <main id="site" class="hidden">
 
@@ -149,7 +171,7 @@
           </div>
           <p class="event-place">Thôn Thiên Lộc, xã Yên Mỹ,<br>tỉnh Hưng Yên</p>
           <a class="map-btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/search/?api=1&query=Th%C3%B4n+Thi%C3%AAn+L%E1%BB%99c%2C+x%C3%A3+Y%C3%AAn+M%E1%BB%B9%2C+H%C6%B0ng+Y%C3%AAn">
+             href="https://maps.app.goo.gl/MuRQRP6jreY9sd8F8">
             Xem bản đồ
           </a>
         </div>
@@ -201,7 +223,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="footer-monogram">X<span>&amp;</span>L</div>
+    <div class="footer-monogram">T<span>&amp;</span>L</div>
     <p class="footer-thanks">Cảm ơn quý khách đã dành thời gian<br>đến chung vui cùng gia đình chúng tôi</p>
     <p class="footer-names">Nguyễn Xuân Toàn &amp; Mạc Thị Loan</p>
     <p class="footer-date">20 . 09 . 2026</p>

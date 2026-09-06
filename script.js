@@ -2,22 +2,66 @@
   "use strict";
 
   /* ---------- Envelope open ---------- */
-  var envelope = document.getElementById("envelope-screen");
+  var envelopeScreen = document.getElementById("envelope-screen");
+  var envelope = document.getElementById("envelope");
   var openBtn = document.getElementById("open-btn");
   var site = document.getElementById("site");
+  var opened = false;
 
-  function openInvitation() {
-    envelope.classList.add("closing");
+  function revealSite() {
+    envelopeScreen.classList.add("closing");
     site.classList.remove("hidden");
     document.body.style.overflow = "";
     setTimeout(function () {
-      envelope.style.display = "none";
+      envelopeScreen.style.display = "none";
       revealOnScroll();
     }, 900);
   }
 
+  function openInvitation() {
+    if (opened) return;
+    opened = true;
+    envelope.classList.add("open");
+    openBtn.classList.add("is-hidden");
+    playMusic();
+    setTimeout(revealSite, 1300);
+  }
+
   document.body.style.overflow = "hidden";
   openBtn.addEventListener("click", openInvitation);
+  envelope.addEventListener("click", openInvitation);
+
+  /* ---------- Background music ---------- */
+  var music = document.getElementById("bg-music");
+  var musicToggle = document.getElementById("music-toggle");
+
+  function playMusic() {
+    music.volume = 0.6;
+    var p = music.play();
+    if (p && p.catch) {
+      p.then(function () {
+        musicToggle.classList.add("playing");
+        musicToggle.setAttribute("aria-pressed", "true");
+      }).catch(function () {
+        musicToggle.classList.remove("playing");
+        musicToggle.setAttribute("aria-pressed", "false");
+      });
+    }
+    musicToggle.classList.remove("hidden");
+  }
+
+  musicToggle.addEventListener("click", function () {
+    if (music.paused) {
+      music.play().then(function () {
+        musicToggle.classList.add("playing");
+        musicToggle.setAttribute("aria-pressed", "true");
+      }).catch(function () {});
+    } else {
+      music.pause();
+      musicToggle.classList.remove("playing");
+      musicToggle.setAttribute("aria-pressed", "false");
+    }
+  });
 
   /* ---------- Falling petals ---------- */
   var petalLayer = document.getElementById("petals");
