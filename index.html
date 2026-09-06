@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xuân Toàn &amp; Mạc Loan | Thiệp Cưới</title>
+<meta name="description" content="Thiệp mời cưới Nguyễn Xuân Toàn &amp; Mạc Thị Loan">
+<meta name="theme-color" content="#f6ede3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== ENVELOPE INTRO ===== -->
+<div id="envelope-screen">
+  <div class="env-bg"></div>
+  <div class="env-wrap">
+    <div class="env-monogram">X<span>&amp;</span>L</div>
+    <p class="env-label">Trân trọng kính mời</p>
+    <button id="open-btn" class="env-button" type="button">
+      <span>Mở Thiệp Mời</span>
+    </button>
+    <p class="env-sub">Nguyễn Xuân Toàn &amp; Mạc Thị Loan</p>
+  </div>
+</div>
+
+<!-- floating petals -->
+<div id="petals" aria-hidden="true"></div>
+
+<main id="site" class="hidden">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="assets/img/hero.jpg" alt="Xuân Toàn và Mạc Loan" loading="eager">
+      <div class="hero-veil"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">The Wedding Of</p>
+      <h1 class="hero-names reveal">
+        <span>Xuân Toàn</span>
+        <span class="amp">&amp;</span>
+        <span>Mạc Loan</span>
+      </h1>
+      <div class="hero-date reveal">
+        <span>19</span><i></i><span>20</span><i></i><span>09</span><i></i><span>2026</span>
+      </div>
+      <p class="hero-tag reveal">Chúng tôi sắp về chung một nhà</p>
+    </div>
+    <a href="#story" class="scroll-cue" aria-label="Cuộn xuống">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== QUOTE / INTRO ===== -->
+  <section class="quote-section" id="story">
+    <div class="ornament">❧</div>
+    <p class="quote reveal">
+      “Hạnh phúc không phải là đích đến, mà là hành trình<br>
+      hai ta cùng nhau bước tiếp — nắm tay nhau qua từng mùa,<br>
+      thương nhau qua từng ngày bình dị.”
+    </p>
+    <div class="ornament flip">❧</div>
+  </section>
+
+  <!-- ===== COUNTDOWN ===== -->
+  <section class="countdown-section">
+    <h2 class="section-title reveal">Đếm ngược ngày trọng đại</h2>
+    <div class="countdown reveal" id="countdown">
+      <div class="cd-box"><span id="cd-days">00</span><small>Ngày</small></div>
+      <div class="cd-box"><span id="cd-hours">00</span><small>Giờ</small></div>
+      <div class="cd-box"><span id="cd-mins">00</span><small>Phút</small></div>
+      <div class="cd-box"><span id="cd-secs">00</span><small>Giây</small></div>
+    </div>
+    <p class="countdown-note reveal">Tính đến Lễ Vu Quy — 16:30, 19/09/2026</p>
+  </section>
+
+  <!-- ===== COUPLE ===== -->
+  <section class="couple-section" id="couple">
+    <h2 class="section-title reveal">Cô Dâu &amp; Chú Rể</h2>
+
+    <div class="couple-grid">
+      <article class="couple-card reveal">
+        <div class="couple-photo">
+          <img src="assets/img/groom-solo.jpg" alt="Chú rể Nguyễn Xuân Toàn" loading="lazy">
+        </div>
+        <p class="couple-role">Chú Rể</p>
+        <h3 class="couple-name">Nguyễn Xuân Toàn</h3>
+        <p class="couple-parents">
+          Con trai ông <strong>Nguyễn Quang Tạo</strong><br>
+          &amp; bà <strong>Nguyễn Thị Xây</strong>
+        </p>
+      </article>
+
+      <div class="couple-divider reveal"><span>&amp;</span></div>
+
+      <article class="couple-card reveal">
+        <div class="couple-photo">
+          <img src="assets/img/bride-solo.jpg" alt="Cô dâu Mạc Thị Loan" loading="lazy">
+        </div>
+        <p class="couple-role">Cô Dâu</p>
+        <h3 class="couple-name">Mạc Thị Loan</h3>
+        <p class="couple-parents">
+          Con gái ông <strong>Mạc Văn Tùng</strong><br>
+          &amp; bà <strong>Nông Thị Biển</strong>
+        </p>
+      </article>
+    </div>
+
+    <figure class="couple-banner reveal">
+      <img src="assets/img/couple-sign.jpg" alt="Xuân Toàn và Mạc Loan" loading="lazy">
+    </figure>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section class="events-section" id="events">
+    <h2 class="section-title light reveal">Lịch Trình Ngày Cưới</h2>
+    <p class="section-sub light reveal">Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi</p>
+
+    <div class="events-list">
+      <article class="event-card reveal">
+        <div class="event-photo"><img src="assets/img/couple-formal-pink.jpg" alt="Lễ Vu Quy" loading="lazy"></div>
+        <div class="event-body">
+          <span class="event-tag">Nhà Gái</span>
+          <h3>Lễ Vu Quy</h3>
+          <div class="event-datetime">
+            <strong>16:30</strong>
+            <span>Thứ Bảy, 19/09/2026</span>
+          </div>
+          <p class="event-place">Nhà riêng, tổ Hoà Chung 8,<br>phường Tân Giang, Cao Bằng</p>
+          <a class="map-btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=T%E1%BB%95+Ho%C3%A0+Chung+8%2C+ph%C6%B0%E1%BB%9Dng+T%C3%A2n+Giang%2C+Cao+B%E1%BA%B1ng">
+            Xem bản đồ
+          </a>
+        </div>
+      </article>
+
+      <article class="event-card reveal">
+        <div class="event-photo"><img src="assets/img/couple-aodai-double.jpg" alt="Lễ Thành Hôn" loading="lazy"></div>
+        <div class="event-body">
+          <span class="event-tag">Nhà Trai</span>
+          <h3>Lễ Thành Hôn &amp; Vinh Quy</h3>
+          <div class="event-datetime">
+            <strong>09:00</strong>
+            <span>Chủ Nhật, 20/09/2026</span>
+          </div>
+          <p class="event-place">Thôn Thiên Lộc, xã Yên Mỹ,<br>tỉnh Hưng Yên</p>
+          <a class="map-btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Th%C3%B4n+Thi%C3%AAn+L%E1%BB%99c%2C+x%C3%A3+Y%C3%AAn+M%E1%BB%B9%2C+H%C6%B0ng+Y%C3%AAn">
+            Xem bản đồ
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery-section" id="gallery">
+    <h2 class="section-title reveal">Khoảnh Khắc Của Chúng Tôi</h2>
+    <div class="gallery-grid">
+      <div class="g-item reveal"><img src="assets/img/couple-closeup.jpg" loading="lazy" alt="Ảnh cưới"></div>
+      <div class="g-item reveal"><img src="assets/img/couple-red-bg.jpg" loading="lazy" alt="Ảnh cưới"></div>
+      <div class="g-item reveal"><img src="assets/img/couple-gray-sit.jpg" loading="lazy" alt="Ảnh cưới"></div>
+      <div class="g-item reveal"><img src="assets/img/couple-pink-sit.jpg" loading="lazy" alt="Ảnh cưới"></div>
+      <div class="g-item reveal"><img src="assets/img/couple-aodai-standing.jpg" loading="lazy" alt="Ảnh cưới"></div>
+      <div class="g-item reveal"><img src="assets/img/couple-formal-gray.jpg" loading="lazy" alt="Ảnh cưới"></div>
+    </div>
+  </section>
+
+  <!-- ===== GIFT / QR ===== -->
+  <section class="gift-section" id="gift">
+    <h2 class="section-title reveal">Mừng Cưới</h2>
+    <p class="section-sub reveal">Tấm lòng của quý khách là món quà quý giá nhất với chúng tôi.<br>
+      Nếu không thể trực tiếp gửi trao, xin phép được nhận qua đây.</p>
+
+    <div class="gift-tabs reveal">
+      <button class="gift-tab active" data-target="gift-groom" type="button">Nhà Trai</button>
+      <button class="gift-tab" data-target="gift-bride" type="button">Nhà Gái</button>
+    </div>
+
+    <div class="gift-panels reveal">
+      <div class="gift-panel active" id="gift-groom">
+        <div class="qr-card">
+          <img src="assets/qr/qr-groom.jpg" alt="QR chuyển khoản chú rể" loading="lazy">
+        </div>
+        <p class="gift-name">Nguyễn Xuân Toàn</p>
+        <p class="gift-hint">Chạm giữ ảnh để lưu mã QR</p>
+      </div>
+      <div class="gift-panel" id="gift-bride">
+        <div class="qr-card">
+          <img src="assets/qr/qr-bride.jpg" alt="QR chuyển khoản cô dâu" loading="lazy">
+        </div>
+        <p class="gift-name">Mạc Thị Loan</p>
+        <p class="gift-hint">Chạm giữ ảnh để lưu mã QR</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-monogram">X<span>&amp;</span>L</div>
+    <p class="footer-thanks">Cảm ơn quý khách đã dành thời gian<br>đến chung vui cùng gia đình chúng tôi</p>
+    <p class="footer-names">Nguyễn Xuân Toàn &amp; Mạc Thị Loan</p>
+    <p class="footer-date">20 . 09 . 2026</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
